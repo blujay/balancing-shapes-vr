@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.newunityproject3.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\rooti\\Documents\\Unity\\New Unity Project (3)\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "New Unity Project (3) [Testing]"
+        }
+      }
+    }
+  ]
+}
