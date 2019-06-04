@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 524392981513693194}
   - component: {fileID: 524392981513693195}
   - component: {fileID: 524392981513693204}
+  - component: {fileID: -4110825140666057551}
   m_Layer: 0
   m_Name: strawberry
   m_TagString: Untagged
@@ -111,7 +112,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 97165f76eeb842b4192221efbdb05ee0, type: 2}
-  - {fileID: 2100000, guid: 034d02d5b631d254aab106d0e0cbf3ea, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2315,3 +2316,16 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+--- !u!114 &-4110825140666057551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524392981513693212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabIndex: 0
