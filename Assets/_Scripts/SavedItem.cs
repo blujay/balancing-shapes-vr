@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class SavedItem
 {
-    public int prefabIndex;
+    public string parentPrefab;
     public Vector3 position;
     public Vector3 rotation;
     public float scale;

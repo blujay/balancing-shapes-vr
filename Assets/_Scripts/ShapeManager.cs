@@ -7,19 +7,17 @@ using UnityEngine;
 
 public class ShapeManager : MonoBehaviour
 {
-    public Transform[] ShapeList;
+    private Dictionary<string, Transform> prefabs;
     public bool savedStack = false;
     public string saveFilename = "prefabData.json";
 
     void Start()
     {
-        Debug.Log(Application.persistentDataPath);
           LoadStack();
     }
 
     void OnApplicationQuit() {
         SaveStack();
-        Debug.Log("stack saved");
     }
 
     public void SaveStack()
@@ -31,7 +29,7 @@ public class ShapeManager : MonoBehaviour
             item.position = shape.transform.position;
             item.rotation = shape.transform.eulerAngles;
             item.scale = shape.transform.localScale.x;
-            item.prefabIndex = shape.GetComponent<ShapeScript>().prefabIndex;
+            item.parentPrefab = shape.GetComponent<ShapeScript>().parentPrefab.name;
 
             saves[shape.gameObject.name] = item;
             //shape.GetComponent<Rigidbody>().isKinematic = true;
@@ -45,6 +43,8 @@ public class ShapeManager : MonoBehaviour
 
     public void LoadStack()
     {
+        
+        prefabs = new Dictionary<string, Transform>();
         string fileName = Path.Combine(Application.persistentDataPath, saveFilename);
         string newJson = File.ReadAllText(fileName);
         var savedData = JsonConvert.DeserializeObject<Dictionary<string, SavedItem>>(newJson);
@@ -60,21 +60,22 @@ public class ShapeManager : MonoBehaviour
                 shape.gameObject.transform.eulerAngles = savedData[shape.gameObject.name].rotation;
                 var scale = savedData[shape.gameObject.name].scale;
                 shape.gameObject.transform.localScale = new Vector3(scale, scale, scale);
+                prefabs[shape.GetComponent<ShapeScript>().parentPrefab.name] = shape.GetComponent<ShapeScript>().parentPrefab;
             }
             
         }
 
         foreach (var key in savedData.Keys) {
              if(!shapesInScene.ContainsKey(key))
-            {
-                var originalShape = ShapeList[savedData[key].prefabIndex];
-                var newObject = Instantiate(originalShape.transform);
-                newObject.name = key;
-                newObject.transform.position = savedData[key].position;
-                newObject.transform.eulerAngles = savedData[key].rotation;
-                var scale = savedData[key].scale;
-                newObject.transform.localScale = new Vector3(scale, scale, scale);
-            }
+             {
+                 var originalShape = prefabs[savedData[key].parentPrefab];
+                 var newObject = Instantiate(originalShape.transform);
+                 newObject.name = key;
+                 newObject.transform.position = savedData[key].position;
+                 newObject.transform.eulerAngles = savedData[key].rotation;
+                 var scale = savedData[key].scale;
+                 newObject.transform.localScale = new Vector3(scale, scale, scale);
+             }
         }
     }
 
