@@ -36,3 +36,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 .idea
+Assets/Plugins/Editor/Jetbrains*
