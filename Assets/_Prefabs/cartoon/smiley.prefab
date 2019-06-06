@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 6171165883276867403}
   - component: {fileID: 6171165883276867402}
   - component: {fileID: 6171165883276867413}
-  - component: {fileID: -1182776994142579355}
   m_Layer: 0
   m_Name: smiley
   m_TagString: Untagged
@@ -1296,16 +1295,3 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
---- !u!114 &-1182776994142579355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6171165883276867410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabIndex: 0
