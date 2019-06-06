@@ -815,6 +815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232126832}
   - component: {fileID: 232126831}
+  - component: {fileID: 232126833}
   m_Layer: 0
   m_Name: ShapeManager
   m_TagString: Untagged
@@ -850,6 +851,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232126833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232126830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d21047d3c6fd14685a588f4937e9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reset: 0
 --- !u!1 &275099735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1185,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-301756
+  m_Name: pb_Mesh-23092
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1408,7 +1422,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh578532
+  m_Name: pb_Mesh41396
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2807,7 +2821,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-301800
+  m_Name: pb_Mesh-23136
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3419,7 +3433,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -2.6368158e+18, z: 5.94e-43, w: -2.3554046e+18}
+  m_BoundingSphereOverride: {x: 0, y: 1.7e-44, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3672,7 +3686,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-29858
+  m_Name: pb_Mesh-22916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3884,7 +3898,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26616
+  m_Name: pb_Mesh-23158
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6507,6 +6521,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
+    - target: {fileID: 1548731245599711809, guid: f5e472d7272a41d40990afb6021f024c,
+        type: 3}
+      propertyPath: m_SelectedVertices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5e472d7272a41d40990afb6021f024c, type: 3}
 --- !u!1001 &1814344177668652589
@@ -6759,7 +6778,7 @@ PrefabInstance:
     - target: {fileID: 3112368555527943695, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[0]
-      value: 43
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 3112368555527943695, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
         type: 3}
@@ -6910,12 +6929,12 @@ PrefabInstance:
     - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
@@ -6936,6 +6955,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[1]
       value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
+        type: 3}
+      propertyPath: m_SelectedVertices.Array.data[2]
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 6171165883276867403, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
