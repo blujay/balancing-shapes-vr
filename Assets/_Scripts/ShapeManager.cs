@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class ShapeManager : MonoBehaviour
 {
-    private Dictionary<string, Transform> prefabs;
-    public bool savedStack = false;
     public string saveFilename = "prefabData.json";
 
     void Start()
@@ -39,10 +37,11 @@ public class ShapeManager : MonoBehaviour
 
     }
 
+    [ContextMenu("Apply changes")]
     public void LoadStack()
     {
         
-        prefabs = new Dictionary<string, Transform>();
+        var prefabs = new Dictionary<string, Transform>();
         string fileName = Path.Combine(Application.persistentDataPath, saveFilename);
         string newJson;
         try
