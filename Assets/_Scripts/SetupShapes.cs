@@ -26,7 +26,6 @@ public class SetupShapes : MonoBehaviour
         }
         foreach (GameObject shape in GameObject.FindGameObjectsWithTag("shape"))
         {
-            //var parent = AssetDatabase.LoadAssetAtPath<Transform>(PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(shape));
             var parent = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(shape);
             var ss = shape.GetComponent<ShapeScript>();
             if (ss == null)

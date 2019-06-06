@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 public class ShapeManager : MonoBehaviour
@@ -37,7 +38,7 @@ public class ShapeManager : MonoBehaviour
 
     }
 
-    [ContextMenu("Apply changes")]
+    [ContextMenu("Apply Saved Changes")]
     public void LoadStack()
     {
         
@@ -74,8 +75,18 @@ public class ShapeManager : MonoBehaviour
             Debug.Log($"Reconstructing {key}");
              if(!shapesInScene.ContainsKey(key))
              {
+                 Transform newObject;
                  var originalShape = prefabs[savedData[key].parentPrefab];
-                 var newObject = Instantiate(originalShape.transform);
+                 if (Application.isPlaying)
+                 {
+                     newObject = Instantiate(originalShape.transform);
+                 }
+                 else
+                 {
+                     var prefabPath = originalShape.GetComponent<ShapeScript>().parentPrefab;
+                     var prefab = AssetDatabase.LoadAssetAtPath<Transform>(prefabPath);
+                     newObject = PrefabUtility.InstantiatePrefab(prefab) as Transform;
+                 }
                  newObject.name = key;
                  newObject.transform.position = savedData[key].position;
                  newObject.transform.eulerAngles = savedData[key].rotation;
