@@ -815,6 +815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232126832}
   - component: {fileID: 232126831}
+  - component: {fileID: 232126833}
   m_Layer: 0
   m_Name: ShapeManager
   m_TagString: Untagged
@@ -834,16 +835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57444ae214bfed64e894ee58f4b2cca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShapeList:
-  - {fileID: 1814344178361140538, guid: f48a312332498ea42b5036b4e2e612cf, type: 3}
-  - {fileID: 6548752037876311087, guid: d51abf93908be81448d686665a5c1a05, type: 3}
-  - {fileID: 2625413278470213284, guid: ab392ac163b20b043a24204eb951a738, type: 3}
-  - {fileID: 8231569662114136847, guid: a8cb1da2eedb56247ae2f3d3a3dad01d, type: 3}
-  - {fileID: 347662785522543632, guid: bb558847c39278b47968185167dd4c45, type: 3}
-  - {fileID: 3112368555527943689, guid: 2e61a6ecbabb88c428a2787c64bf9a96, type: 3}
-  - {fileID: 1548731245599711813, guid: f5e472d7272a41d40990afb6021f024c, type: 3}
-  - {fileID: 6171165883276867412, guid: 1d22d533df4dd0f4faf01966be6ebc94, type: 3}
-  - {fileID: 524392981513693203, guid: dd5fb98be8c67fc4790a3cbd2859ffd5, type: 3}
   savedStack: 0
   saveFilename: prefabData.json
 --- !u!4 &232126832
@@ -860,6 +851,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232126833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232126830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d21047d3c6fd14685a588f4937e9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reset: 0
 --- !u!1 &275099735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1185,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26556
+  m_Name: pb_Mesh-23092
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1418,7 +1422,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26972
+  m_Name: pb_Mesh41396
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2817,7 +2821,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26596
+  m_Name: pb_Mesh-23136
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3429,7 +3433,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -5.7436995e+37, z: -4.983924e+24, w: 5.5136934e+29}
+  m_BoundingSphereOverride: {x: 0, y: 1.7e-44, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3682,7 +3686,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-29858
+  m_Name: pb_Mesh-22916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3894,7 +3898,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26616
+  m_Name: pb_Mesh-23158
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6517,6 +6521,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
+    - target: {fileID: 1548731245599711809, guid: f5e472d7272a41d40990afb6021f024c,
+        type: 3}
+      propertyPath: m_SelectedVertices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5e472d7272a41d40990afb6021f024c, type: 3}
 --- !u!1001 &1814344177668652589
@@ -6654,7 +6663,7 @@ PrefabInstance:
     - target: {fileID: 3112368555527943689, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.403
+      value: 0.457
       objectReference: {fileID: 0}
     - target: {fileID: 3112368555527943689, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
         type: 3}
@@ -6769,7 +6778,7 @@ PrefabInstance:
     - target: {fileID: 3112368555527943695, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[0]
-      value: 43
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 3112368555527943695, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
         type: 3}
@@ -6817,6 +6826,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
+    - target: {fileID: 3112368555527943703, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e61a6ecbabb88c428a2787c64bf9a96, type: 3}
 --- !u!1001 &6171165883924996058
@@ -6915,12 +6929,12 @@ PrefabInstance:
     - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
@@ -6941,6 +6955,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[1]
       value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171165883276867408, guid: 1d22d533df4dd0f4faf01966be6ebc94,
+        type: 3}
+      propertyPath: m_SelectedVertices.Array.data[2]
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 6171165883276867403, guid: 1d22d533df4dd0f4faf01966be6ebc94,
         type: 3}
