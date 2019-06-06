@@ -86,6 +86,7 @@ public class ShapeManager : MonoBehaviour
                      var prefabPath = originalShape.GetComponent<ShapeScript>().parentPrefab;
                      var prefab = AssetDatabase.LoadAssetAtPath<Transform>(prefabPath);
                      newObject = PrefabUtility.InstantiatePrefab(prefab) as Transform;
+                     newObject.tag = "shape";
                  }
                  newObject.name = key;
                  newObject.transform.position = savedData[key].position;
