@@ -230,7 +230,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26534
+  m_Name: pb_Mesh-38090
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -403,7 +403,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26684
+  m_Name: pb_Mesh-38240
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1185,7 +1185,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-23092
+  m_Name: pb_Mesh-38112
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1422,7 +1422,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41396
+  m_Name: pb_Mesh58696
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1932,7 +1932,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26576
+  m_Name: pb_Mesh-38132
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2648,7 +2648,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26514
+  m_Name: pb_Mesh-38070
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2821,7 +2821,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-23136
+  m_Name: pb_Mesh-38152
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3328,6 +3328,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1440642373}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1440642375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1814344178361140540, guid: f48a312332498ea42b5036b4e2e612cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1440642373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1440642376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440642375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/cloud.prefab
 --- !u!1 &1468561435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,7 +3452,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.7e-44, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3686,7 +3705,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-22916
+  m_Name: pb_Mesh-37954
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3898,7 +3917,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-23158
+  m_Name: pb_Mesh-38172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4623,6 +4642,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb558847c39278b47968185167dd4c45, type: 3}
+--- !u!1 &347662785801137126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 347662785522543626, guid: bb558847c39278b47968185167dd4c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 347662785801137125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &347662785801137127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347662785801137126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/icecream.prefab
 --- !u!1001 &524392981093918715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6413,6 +6451,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd5fb98be8c67fc4790a3cbd2859ffd5, type: 3}
+--- !u!1 &524392981093918716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 524392981513693212, guid: dd5fb98be8c67fc4790a3cbd2859ffd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 524392981093918715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &524392981093918717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524392981093918716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/strawberry.prefab
 --- !u!1001 &1548731245655596491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6528,6 +6585,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5e472d7272a41d40990afb6021f024c, type: 3}
+--- !u!1 &1548731245655596492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1548731245599711811, guid: f5e472d7272a41d40990afb6021f024c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1548731245655596491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1548731245655596493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548731245655596492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/phone.prefab
 --- !u!1001 &1814344177668652589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6638,6 +6714,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48a312332498ea42b5036b4e2e612cf, type: 3}
+--- !u!1 &1814344177668652590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1814344178361140540, guid: f48a312332498ea42b5036b4e2e612cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1814344177668652589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1814344177668652591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814344177668652590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/cloud.prefab
 --- !u!1001 &3112368555854882467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6833,6 +6928,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e61a6ecbabb88c428a2787c64bf9a96, type: 3}
+--- !u!1 &3112368555854882468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3112368555527943690, guid: 2e61a6ecbabb88c428a2787c64bf9a96,
+    type: 3}
+  m_PrefabInstance: {fileID: 3112368555854882467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3112368555854882469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112368555854882468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/letter.prefab
 --- !u!1001 &6171165883924996058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6983,6 +7097,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d22d533df4dd0f4faf01966be6ebc94, type: 3}
+--- !u!1 &6171165883924996059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6171165883276867410, guid: 1d22d533df4dd0f4faf01966be6ebc94,
+    type: 3}
+  m_PrefabInstance: {fileID: 6171165883924996058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6171165883924996060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171165883924996059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/smiley.prefab
 --- !u!1001 &6472115567315877318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7385,3 +7518,22 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 584e8ded20e8de041a06b9cd1006dc83, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8cb1da2eedb56247ae2f3d3a3dad01d, type: 3}
+--- !u!1 &8231569663297016993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8231569662114136841, guid: a8cb1da2eedb56247ae2f3d3a3dad01d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8231569663297016992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8231569663297016994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231569663297016993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/cartoon/heart.prefab
