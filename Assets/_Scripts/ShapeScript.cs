@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ShapeScript : MonoBehaviour
 {
-    public Transform parentPrefab;
+    public string parentPrefab;
 }

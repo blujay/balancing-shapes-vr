@@ -20,21 +20,23 @@ public class SetupShapes : MonoBehaviour
 
     void DoSetup()
     {
-        if (Application.isPlaying) return;
-        Debug.Log("Setting up shapes");
+        if (Application.isPlaying)
+        {
+            return;
+        }
         foreach (GameObject shape in GameObject.FindGameObjectsWithTag("shape"))
         {
+            //var parent = AssetDatabase.LoadAssetAtPath<Transform>(PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(shape));
+            var parent = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(shape);
             var ss = shape.GetComponent<ShapeScript>();
             if (ss == null)
             {
-                ss = shape.AddComponent<ShapeScript>();
+                ss = shape.gameObject.AddComponent<ShapeScript>();
             }
 
-            if (ss.parentPrefab == null || reset)
+            if (string.IsNullOrEmpty(ss.parentPrefab) || reset)
             {
-                var parent = AssetDatabase.LoadAssetAtPath<Transform>(PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(shape));
-                ss.parentPrefab = parent;
-                Debug.Log(ss.parentPrefab);
+                shape.GetComponent<ShapeScript>().parentPrefab = parent;
             }
         }
     }
