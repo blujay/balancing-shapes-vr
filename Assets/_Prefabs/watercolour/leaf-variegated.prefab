@@ -14,13 +14,13 @@ GameObject:
   - component: {fileID: 8051473663369748280}
   - component: {fileID: 8051473663369748283}
   - component: {fileID: 8051473663369748282}
-  - component: {fileID: -8718823128557010904}
-  - component: {fileID: 7011740507114865315}
-  - component: {fileID: 5002636387321511737}
-  - component: {fileID: 9058603943891414193}
+  - component: {fileID: 4371397307545422498}
+  - component: {fileID: 2112942005690312683}
+  - component: {fileID: 6844851913947136235}
+  - component: {fileID: 6831452035692119587}
   m_Layer: 0
   m_Name: leaf-variegated
-  m_TagString: Untagged
+  m_TagString: shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 8051473663369748285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.70190996, y: 0.48291016, z: -1.257519}
-  m_LocalScale: {x: 0.16097, y: 0.16097, z: 0.27767324}
+  m_LocalScale: {x: 0.11808599, y: 0.11808599, z: 0.18390712}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1281,10 +1281,10 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &-8718823128557010904
+--- !u!114 &4371397307545422498
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
---- !u!54 &7011740507114865315
+--- !u!54 &2112942005690312683
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1351,7 +1351,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5002636387321511737
+--- !u!114 &6844851913947136235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
---- !u!114 &9058603943891414193
+--- !u!114 &6831452035692119587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -17992,7 +17992,7 @@ GameObject:
   - component: {fileID: 7806042546578649003}
   m_Layer: 0
   m_Name: flower-stem
-  m_TagString: Untagged
+  m_TagString: shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

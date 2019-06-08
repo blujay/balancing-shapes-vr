@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2625413278470213284}
   m_Layer: 0
   m_Name: eyes
-  m_TagString: Untagged
+  m_TagString: shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,11 +99,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 482762665672404730, guid: d51abf93908be81448d686665a5c1a05,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d51abf93908be81448d686665a5c1a05, type: 3}
 --- !u!4 &380471082903162174 stripped
@@ -177,11 +172,6 @@ PrefabInstance:
     - target: {fileID: 6548752037876311087, guid: d51abf93908be81448d686665a5c1a05,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 482762665672404730, guid: d51abf93908be81448d686665a5c1a05,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

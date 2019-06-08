@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5395150182429092659}
   m_Layer: 0
   m_Name: stem
-  m_TagString: Untagged
+  m_TagString: shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4067305169473627344}
-  m_LocalRotation: {x: 0.24687459, y: -0.7681712, z: -0.32096007, w: -0.49593416}
+  m_LocalRotation: {x: -0.24687804, y: 0.76816964, z: 0.3209587, w: 0.49593565}
   m_LocalPosition: {x: 0.7388615, y: 0.72118324, z: -2.4594872}
   m_LocalScale: {x: 0.21915026, y: 0.21914986, z: 0.2191502}
   m_Children:
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 7058100841893509894}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -47.559002, y: 116.591, z: -5.181}
 --- !u!114 &5616530190185818504
 MonoBehaviour:
   m_ObjectHideFlags: 0

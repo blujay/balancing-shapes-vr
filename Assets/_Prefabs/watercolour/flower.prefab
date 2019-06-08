@@ -327,7 +327,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
 --- !u!1 &4289948743280815413
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 7378777218069557987}
   m_Layer: 0
   m_Name: flower
-  m_TagString: Untagged
+  m_TagString: shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,9 +357,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4289948743280815413}
-  m_LocalRotation: {x: 0.26012293, y: -0, z: -0, w: 0.9655756}
+  m_LocalRotation: {x: 0.26012537, y: 0, z: 0, w: 0.96557486}
   m_LocalPosition: {x: 0.0292, y: 0.1058, z: 0.0505}
-  m_LocalScale: {x: 0.20726, y: 0.20726, z: 0.20726}
+  m_LocalScale: {x: 0.20726, y: 0.20726003, z: 0.20726003}
   m_Children:
   - {fileID: 4289948743514771149}
   - {fileID: 4289948743388258535}
@@ -808,7 +808,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
 --- !u!1 &6030321002539623172
@@ -1138,7 +1138,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
 --- !u!1 &7582491816081759712
@@ -1468,7 +1468,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
 --- !u!1001 &5501798271738341860
@@ -1538,15 +1538,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8634145713716373303, guid: 3d21485298b1466448ed0fc609799828,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8634145713716373300, guid: 3d21485298b1466448ed0fc609799828,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d21485298b1466448ed0fc609799828, type: 3}

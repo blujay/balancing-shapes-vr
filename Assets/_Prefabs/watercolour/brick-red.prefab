@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 5050901115433742179}
   - component: {fileID: -2684713154707163824}
   - component: {fileID: -7167094305972777300}
+  - component: {fileID: 4473897680792669969}
   m_Layer: 0
   m_Name: brick-red
-  m_TagString: Untagged
+  m_TagString: shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 7703446118008523656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.5521457, y: 1.1002656, z: -2.7440882}
-  m_LocalScale: {x: 0.20025226, y: 0.2635596, z: 0.27621}
+  m_LocalScale: {x: 0.11155453, y: 0.14682116, z: 0.15386832}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -424,3 +425,16 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &4473897680792669969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7703446118008523656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPrefab: Assets/_Prefabs/watercolour/brick-red.prefab
